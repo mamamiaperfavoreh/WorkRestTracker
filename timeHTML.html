@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Work/Rest Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <img src="https://placekitten.com/100/100" alt="Hello Kitty" class="kitty-img">
+      <h1>NASR IS ASS</h1>
+    </div>
+    
+    <div class="tracker">
+      <div class="timer-display">
+        <div class="time" id="work-time">Work: 00:00:00</div>
+        <div class="time" id="rest-time">Rest: 00:00:00</div>
+      </div>
+      <div class="controls">
+        <button id="play-btn">Play</button>
+        <button id="pause-btn">Pause</button>
+        <button id="finish-btn">Finish Work Day</button>
+      </div>
+    </div>
+
+    <div class="calendar">
+      <h2>Daily Summary</h2>
+      <div id="calendar-view">
+        <p id="today-date"></p>
+        <p id="total-work">Total Work: 00:00:00</p>
+        <p id="total-rest">Total Rest: 00:00:00</p>
+      </div>
+    </div>
+
+    <div class="session-history">
+      <h2>Session History</h2>
+      <table id="sessions-table">
+        <thead>
+          <tr>
+            <th>Date</th>
+            <th>Start Time</th>
+            <th>End Time</th>
+            <th>Work Duration</th>
+            <th>Rest Duration</th>
+          </tr>
+        </thead>
+        <tbody id="session-body">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
