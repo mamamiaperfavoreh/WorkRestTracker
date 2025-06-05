@@ -27,7 +27,6 @@ function formatTime(seconds) {
 function checkNewDay() {
   const today = new Date().toLocaleDateString();
   if (today !== currentDate) {
-    // New day detected
     if (currentSession) {
       saveSession();
       resetTimers();
@@ -153,5 +152,4 @@ updateDailySummary();
 updateSessionTable();
 
 // Check for new day periodically
-setInterval(checkNewDay, 60000); // Check every minute
-//FuckYou
+setInterval(checkNewDay, 60000);
