@@ -154,4 +154,4 @@ updateSessionTable();
 
 // Check for new day periodically
 setInterval(checkNewDay, 60000); // Check every minute
-#Fuck You
+#FuckYou
